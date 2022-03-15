@@ -1,0 +1,369 @@
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="IE-edge" http-equiv="X-UA-Compatible" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Let's Shop</title>
+    <!--web-icon------------------->
+    <link href="./images/logo.png" rel="shortcut icon" />
+    <!--stylesheet-------------------->
+    <!-- <link href="css/style.css" rel="stylesheet" type="text/css"/> -->
+
+    <!-- css link  -->
+    <link rel="stylesheet" href="./css/all.css">
+    <link rel="stylesheet" href="./css/banner.css">
+    <link rel="shortcut icon" href="./image/titleimg.svg">
+
+    <!--FontAwesome-------->
+    <script crossorigin="anonymous" src="https://kit.fontawesome.com/70a642cd7c.js"></script>
+
+    <script>
+        function showAlert() {
+            alert("Your Request has been Submitted ");
+        }
+    </script>
+
+
+
+</head>
+
+<body>
+
+    <div class="space"></div>
+    <!--header--------------------->
+    <header id="header">
+        <h3>
+            <a href="" class="logo">
+                <font>Let's </font>Shop
+            </a>
+        </h3>
+
+        <div class="space"></div>
+
+        <!--header-menu---------------->
+        <ul class="header-menu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#product">Products</a></li>
+            <li><a href="#trendy">Features</a></li>
+            <!-- <li><a href="#">Brand</a></li> -->
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <!-- <ul class="header-account">
+            <li><a href="#">Account</a></li>
+        </ul> -->
+    </header>
+
+    <div class="space"></div>
+    <div class="space"></div>
+
+    <!-- banner  -->
+
+    <div class="slideshow-container banner">
+
+        <div class="mySlides fade">
+            <!-- <div class="numbertext">1 / 3</div> -->
+            <img src="./image/banner/b1.png" style="width:100%">
+            <!-- <div class="text">Caption Text</div> -->
+        </div>
+
+        <div class="mySlides fade">
+            <!-- <div class="numbertext">2 / 3</div> -->
+            <img src="./image/banner/b2.png" style="width:100%">
+            <!-- <div class="text">Caption Two</div> -->
+        </div>
+
+        <div class="mySlides fade">
+            <!-- <div class="numbertext">3 / 3</div> -->
+            <img src="./image/banner/b3.png" style="width:100%">
+            <!-- <div class="text">Caption Three</div> -->
+        </div>
+        <div class="mySlides fade">
+            <!-- <div class="numbertext">4 / 3</div> -->
+            <img src="./image/banner/b4.png" style="width:100%">./
+            <!-- <div class="text">Caption Three</div> -->
+        </div>
+    </div>
+    <br>
+    <div style="text-align:center">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
+
+    <script>
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {
+                slideIndex = 1
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+    </script>
+
+    <!--main-section--------------->
+    <section class="main">
+        <!--logo------------->
+        <!-- <div class="logo">
+            <a href="#">
+                <font>LO</font>GO
+            </a>
+        </div> -->
+        <!--side-menu------------->
+        <!-- <div class="side-box"> -->
+        <!--search------------->
+        <!-- <div class="search"> -->
+        <!--icon----------->
+        <!-- <i class="fas fa-search"></i>
+                <input placeholder="Search" type="text" />
+            </div>
+        </div> -->
+        <!--img--------->
+        <div class="m-img">
+            <img alt="" src="./image/summ_collection.png" />
+        </div>
+        <!--text------------>
+        <div class="m-text">
+            <h1>Su
+                <font>mm</font>er</h1>
+            <h2>Collect
+                <font>ion</font>
+            </h2>
+            <!--btn------------>
+            <a class="m-btn" href="#">Details</a>
+        </div>
+        <!--social-------->
+        <!-- <div class="social">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+        </div> -->
+    </section>
+
+
+    <div class="division"></div>
+
+
+    <section id="trendy">
+        <section class="product">
+            <!--heading------------>
+            <div class="p-heading">
+                <h3>Trendy
+                    <font>Arri</font>vals</h3>
+            </div>
+            <!--product-container----------------->
+            <div class="product-container">
+                <!--box-1------------>
+                <div class="p-box">
+                    <img alt="1" src="./image/trendy/t1.png" />
+                    <!--details--------->
+                    <p>Brown Blazer</p>
+                    <!--price--->
+                    <a class="price" href="#trendy">₹ 1999/-</a>
+                    <!--buy-btn-->
+                    <a class="buy-btn" href="./trent_coat.html">Shop Now</a>
+                </div>
+                <!--box-2------------>
+                <div class="p-box">
+                    <img alt="2" src="./image/trendy/t2.png" />
+                    <!--details--------->
+                    <p>Titan Watch</p>
+                    <!--price--->
+                    <a class="price" href="#trendy" href="#trendy" href="#trendy" href="#trendy" href="#trendy">₹ 4999/-</a>
+                    <!--buy-btn-->
+                    <a class="buy-btn" href="./trend_mens_watch.html">Shop Now</a>
+                </div>
+                <!--box-3------------>
+                <div class="p-box">
+                    <img alt="3" src="./image/trendy/t3.png" />
+                    <!--details--------->
+                    <p>Leather HandBag</p>
+                    <!--price--->
+                    <a class="price" href="#trendy">₹ 1499/-</a>
+                    <!--buy-btn-->
+                    <a class="buy-btn" href="./handbag.html">Shop Now</a>
+                </div>
+                <!--box-4------------>
+                <div class="p-box">
+                    <img alt="4" src="./image/trendy/t4.png" />
+                    <!--details--------->
+                    <p>Genuine Leather Bag</p>
+                    <!--price--->
+                    <a class="price" href="#trendy">₹ 999/-</a>
+                    <!--buy-btn-->
+                    <a class="buy-btn" href="./bag.html">Shop Now</a>
+                </div>
+                <!--box-5------------>
+                <div class="p-box">
+                    <img alt="5" src="./image/trendy/t5.png" />
+                    <!--details--------->
+                    <p>Adidas Sports Shoe</p>
+                    <!--price--->
+                    <a class="price" href="#trendy">₹ 2999/-</a>
+                    <!--buy-btn-->
+                    <a class="buy-btn" href="./shoe.html">Shop Now</a>
+                </div>
+                <!--box-6------------>
+                <div class="p-box">
+                    <img alt="6" src="./image/trendy/t6.png" />
+                    <!--details--------->
+                    <p>Leather Watch</p>
+                    <!--price--->
+                    <a class="price" href="#trendy">₹ 1499/-</a>
+                    <!--buy-btn-->
+                    <a class="buy-btn" href="./women_watch.html">Shop Now</a>
+                </div>
+            </div>
+
+        </section>
+    </section>
+
+
+    <div class="divisions"></div>
+    <!--our-brand-section----------------->
+    <section class="our-brand">
+        <!--text-->
+        <div class="brand-text">
+            <!--heading-->
+            <h3>Our Brand</h3>
+            <h4>Casual Shoes 2020 New Arrivals
+                <font> Classic Shoes</font>
+            </h4>
+            <!--details-->
+            <p>Styles You'll Love <br> Canvas shoes are your evergreen companions. You will probably never have enough of them because they bring a different touch to every outfit. To help you refine that special touch is our canvas shoes selection, which
+                has shoes in a variety of great colours and styles. Create a carefree, monochromatic look by pairing light-wash denim with complementary denim-washed canvas shoes and a dark blue polo T-shirt. Fellas, don’t be afraid of yellow this season.
+                Wear a pair of bright yellow canvas shoes with any multi-coloured checked shirt. Take this look from confident to simple and suave by rolling up your shirtsleeves, going for a cropped trouser, and throwing in a pair designer trouser socks.
+                Women can reinvent this look by going for softer colours—pastels, perhaps—patterned bottoms, and flat shoes that reveal a lot of ankle.
+            </p>
+        </div>
+        <!--img-->
+        <div class="brand-img"><img src="./image/brand.png" /></div>
+    </section>
+
+    <div class="division"></div>
+
+    <!--Product------------------->
+    <section id="product">
+        <section class="product">
+            <!--heading------------>
+            <div class="p-heading">
+                <h3>
+                    <font>Pro</font>duct
+                    <font>Show</font>case
+                </h3>
+            </div>
+            <!--product-container----------------->
+            <div class="product-container">
+                <!--box-1------------>
+                <div class="p-box">
+                    <img alt="1" src="./image/products/p1.png" />
+                    <!--details--------->
+                    <p>Woman's Dress</p>
+                    <!--price--->
+                    <a class="price" href="#product">More</a>
+                    <!--buy-btn-->
+                    <a class="buy-btn" href="#product">Explore</a>
+                </div>
+                <!--box-2------------>
+                <div class="p-box">
+                    <img alt="2" src="./image/products/p2.png" />
+                    <!--details--------->
+                    <p>Woman's Footwear</p>
+                    <!--price--->
+                    <a class="price" href="#product">More</a>
+                    <!--buy-btn-->
+                    <a class="buy-btn" href="#product">Explore</a>
+                </div>
+                <!--box-3------------>
+                <div class="p-box">
+                    <img alt="3" src="./image/products/p3.png" />
+                    <!--details--------->
+                    <p>Men's Show</p>
+                    <!--price--->
+                    <a class="price" href="#product">More</a>
+                    <!--buy-btn-->
+                    <a class="buy-btn" href="#product">Explore</a>
+                </div>
+                <!--box-4------------>
+                <div class="p-box">
+                    <img alt="4" src="./image/products/p4.png" />
+                    <!--details--------->
+                    <p>Men's Fashion</p>
+                    <!--price--->
+                    <a class="price" href="#product">More</a>
+                    <!--buy-btn-->
+                    <a class="buy-btn" href="#product">Explore</a>
+                </div>
+                <!--box-5------------>
+                <div class="p-box">
+                    <img alt="5" src="./image/products/p5.png" />
+                    <!--details--------->
+                    <p>Woman's Watch</p>
+                    <!--price--->
+                    <a class="price" href="#product">More</a>
+                    <!--buy-btn-->
+                    <a class="buy-btn" href="#product">Explore</a>
+                </div>
+                <!--box-6------------>
+                <div class="p-box">
+                    <img alt="6" src="./image/products/p6.png" />
+                    <!--details--------->
+                    <p>Men's Watch</p>
+                    <!--price--->
+                    <a class="price" href="#product">More</a>
+                    <!--buy-btn-->
+                    <a class="buy-btn" href="#product">Explore</a>
+                </div>
+            </div>
+
+        </section>
+    </section>
+    <!--subscribe------------------------->
+    <section class="subcribe-container" id="contact">
+        <!--heading-->
+        <h3>Subcribe For New Product Notification</h3>
+        <!--Input-------->
+        <div class="subcribe-input">
+            <input placeholder="lets.shop@gmail.com" type="email" />
+            <a class="subcribe-btn" href="#" onclick="showAlert()">Send</a>
+        </div>
+    </section>
+
+
+
+
+
+
+    <footer>
+        <div class="footer-content">
+            <h3>Lets Shop</h3>
+            <p>
+                For Further Details,Contact Shitanshu Ghildiyal, @ghildiyalshitanshu@gmail.com
+            </p>
+        </div>
+    </footer>
+
+
+
+
+    <!--copyright--------------->
+    <a class="copyright" href="#">&#169; Copyright 2021 | E-Commerce Site</a>
+</body>
+
+</html>
